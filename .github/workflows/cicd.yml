@@ -31,3 +31,6 @@ jobs:
 
       - name: testing
         run: bash scripts/test.sh
+      
+      - name: running
+        run: bash scripts/run.sh
