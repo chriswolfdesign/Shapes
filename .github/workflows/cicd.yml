@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  - lint:
+  lint:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -28,12 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: linting
         run: bash scripts/lint.sh
-  
-  - test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
 
       - name: testing
         run: bash scripts/test.sh
