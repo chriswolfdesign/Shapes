@@ -8,7 +8,7 @@ import (
 var _ = Describe("Foo", func() {
 	Describe("Tests", func() {
 		It("Should break", func() {
-			Expect(true).To(Equal(false))
+			Expect(true).To(Equal(true))
 		})
 	})
 })
