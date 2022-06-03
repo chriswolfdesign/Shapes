@@ -1,4 +1,4 @@
-package main_test
+package model_test
 
 import (
 	. "github.com/onsi/ginkgo"
@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestSrc(t *testing.T) {
+func TestShapes(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Src Suite")
+	RunSpecs(t, "Shapes Suite")
 }
