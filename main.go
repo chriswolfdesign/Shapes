@@ -6,6 +6,7 @@ func main() {
 	shapes_list := []model.Shape{}
 
 	shapes_list = append(shapes_list, model.MakeRectangle(4, 5))
+	shapes_list = append(shapes_list, model.MakeSquare(5))
 
 	for _, shape := range(shapes_list) {
 		shape.DisplayStats()
