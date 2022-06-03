@@ -1,5 +1,7 @@
 package model
 
+import "fmt"
+
 type Rectangle struct {
 	height int
 	width int
@@ -15,4 +17,10 @@ func (r Rectangle) GetPerimeter() float64 {
 
 func (r Rectangle) GetArea() float64 {
 	return float64(r.height * r.width)
+}
+
+func (r Rectangle) DisplayStats() {
+	fmt.Println("Perimeter:", r.GetPerimeter())
+	fmt.Println("Area:", r.GetArea())
+	fmt.Println()  // for spacing
 }
