@@ -36,4 +36,18 @@ var _ = Describe("Rectangle", func() {
 			Expect(rect3.GetPerimeter()).To(Equal(26.0))
 		})
 	})
+
+	Describe("Area tests", func() {
+		It("Should be 20.0", func() {
+			Expect(rect1.GetArea()).To(Equal(20.0))
+		})
+
+		It("Should be 30.0", func() {
+			Expect(rect2.GetArea()).To(Equal(30.0))
+		})
+
+		It("Should be 42.0", func() {
+			Expect(rect3.GetArea()).To(Equal(42.0))
+		})
+	})
 })

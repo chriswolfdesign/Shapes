@@ -14,5 +14,5 @@ func (r Rectangle) GetPerimeter() float64 {
 }
 
 func (r Rectangle) GetArea() float64 {
-	return 0
+	return float64(r.height * r.width)
 }
