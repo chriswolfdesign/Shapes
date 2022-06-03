@@ -1,0 +1,9 @@
+FROM golang:latest
+
+RUN mkdir app
+COPY . /app
+WORKDIR /app
+
+RUN go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.46.2
+
+CMD ["golangci-lint", "run"]
