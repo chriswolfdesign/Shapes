@@ -36,4 +36,18 @@ var _ = Describe("Square", func() {
 			Expect(sq3.GetPerimeter()).To(Equal(48.0))
 		})
 	})
+
+	Describe("Area tests", func() {
+		It("Should be 16", func() {
+			Expect(sq1.GetArea()).To(Equal(16.0))
+		})
+
+		It("Should be 64", func() {
+			Expect(sq2.GetArea()).To(Equal(64.0))
+		})
+
+		It("Should be 144", func() {
+			Expect(sq3.GetArea()).To(Equal(144.0))
+		})
+	})
 })
