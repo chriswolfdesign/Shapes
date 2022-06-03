@@ -28,3 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: linting
         run: bash scripts/lint.sh
+      
+      - name: testing
+        run: bash scripts/test.sh
