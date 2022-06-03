@@ -16,3 +16,7 @@ func (s Square) GetPerimeter() float64 {
 func (s Square) GetArea() float64 {
 	return s.rect.GetArea()
 }
+
+func (s Square) DisplayStats() {
+	s.rect.DisplayStats()
+}
